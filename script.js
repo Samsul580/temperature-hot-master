@@ -1,7 +1,7 @@
 const inputBtn = document.getElementById("input-btn");
 inputBtn.addEventListener("click", function () {
     const cityInput = document.getElementById("city-input").value;
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${cityInput}&appid=81ce23af551e015bec7be2d9670ba50c`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityInput}&appid=81ce23af551e015bec7be2d9670ba50c`)
         .then(response => response.json())
         .then(data => {
             const weather = document.getElementById("weather");
